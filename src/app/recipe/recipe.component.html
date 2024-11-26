@@ -1,0 +1,11 @@
+<div class="recipe-grid">
+    <div class="recipe-card" *ngFor="let recipe of recipes">
+      <img class="recipe-card__image" [src]="recipe.imageUrl" [alt]="recipe.title" />
+      <h3 class="recipe-card__title">{{ recipe.title }}</h3>
+      <div class="recipe-card__buttons">
+        <button class="btn btn-primary">Ingredients</button>
+        <button class="btn btn-secondary">Trending!</button>
+      </div>
+    </div>
+  </div>
+  
